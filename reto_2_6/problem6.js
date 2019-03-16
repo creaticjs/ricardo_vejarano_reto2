@@ -17,14 +17,27 @@ function navegate(valueNavegate) {
 }
 
 function calculate() {
-    var s1 = document.getElementById('side1').value;
-    var s2 = document.getElementById('side2').value;
-    var s3 = document.getElementById('side3').value;
-    if (s1 && s2 && s3) {
-        var p = (parseFloat(s1)+parseFloat(s2)+parseFloat(s3))/2
-        var a = Math.sqrt(p*(p - s1)*(p - s2)*(p - s2));
-        document.getElementById('area').innerHTML = '<p>Area: ' + a + '</p>';
+    var hour_24 = document.getElementById('hour-24').value;
+    var arrayHour = hour_24.split('');
+    if (arrayHour.length === 5) {
+        if (arrayHour[2] === ":") {
+            determinateHour(hour_24);
+        } else {
+            Materialize.toast('Invalid hour format', 4000);
+        }
+
     } else {
-        Materialize.toast('All fields are required', 4000);
+        Materialize.toast('Enter a valid value', 4000);
     }
+
+}
+
+function determinateHour(hour) {
+    var temp = hour.split(':');
+    if(temp[0] > 0 && temp[0] <= 24  ) {
+
+    } else {
+        Materialize.toast('Invalid hour', 4000);
+    }
+    console.log(hour);
 }
