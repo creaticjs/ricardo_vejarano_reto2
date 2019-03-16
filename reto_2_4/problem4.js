@@ -13,13 +13,13 @@ function navegate(valueNavegate) {
 }
 
 function calculate() {
-    var m = document.getElementById('masse').value;
-    if(m) {
-        m3 = Math.pow(m, 3); 
-        var c = 2.997925e10;
-        e = c*m3;
-        var eString = e.toString().replace('e', 'x10')
-        document.getElementById('energy').innerHTML = '<p>Energy: ' +eString + '  ergios </p>';
+    var s1 = document.getElementById('side1').value;
+    var s2 = document.getElementById('side2').value;
+    if (s1 && s2) {
+        s12 = Math.pow(s1, 2); 
+        s22 = Math.pow(s2, 2); 
+        hyp = Math.sqrt(s12 + s22);
+        document.getElementById('hypotenuse').innerHTML = '<p>Hypotenuse: ' + hyp + '</p>'; 
     } else {
         Materialize.toast('All fields are required', 4000);
     }
