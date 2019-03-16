@@ -9,6 +9,8 @@ function navegate(valueNavegate) {
             break;
         case 4: window.location.replace('http://127.0.0.1:5500/reto_2_4/problem4.html')
             break;
+        case 5: window.location.replace('http://127.0.0.1:5500/reto_2_5/problem5.html')
+            break;
     }
 }
 
@@ -16,10 +18,10 @@ function calculate() {
     var s1 = document.getElementById('side1').value;
     var s2 = document.getElementById('side2').value;
     if (s1 && s2) {
-        s12 = Math.pow(s1, 2); 
-        s22 = Math.pow(s2, 2); 
+        s12 = Math.pow(s1, 2);
+        s22 = Math.pow(s2, 2);
         hyp = Math.sqrt(s12 + s22);
-        document.getElementById('hypotenuse').innerHTML = '<p>Hypotenuse: ' + hyp + '</p>'; 
+        document.getElementById('hypotenuse').innerHTML = '<p>Hypotenuse: ' + hyp + '</p>';
     } else {
         Materialize.toast('All fields are required', 4000);
     }
