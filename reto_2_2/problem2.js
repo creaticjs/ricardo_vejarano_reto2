@@ -5,6 +5,8 @@ function navegate(valueNavegate) {
             break;
         case 2: window.location.replace('http://127.0.0.1:5500/reto_2_2/problem2.html')
             break;
+        case 3: window.location.replace('http://127.0.0.1:5500/reto_2_3/problem3.html')
+            break;
     }
 }
 
@@ -14,7 +16,7 @@ function calculate() {
     var m2 = document.getElementById('masse2').value;
     var dis = document.getElementById('distance').value;
     if (m1 && m2 && dis) {
-        dis2 = Math.pow(dis, 2)
+        dis2 = Math.pow(dis, 2);
         var f = (g * m1 * m2) / dis2;
         document.getElementById('force-show').innerHTML = '<p>Force: ' +f + '  g × cm/seg² </p>';
 
