@@ -1,10 +1,3 @@
-/*
-document.getElementById('date').innerHTML = '<p>Date: ' + day + ' ' + monthNumber + ' ' + year +' </p>';
-Materialize.toast('Invalid data', 4000);
-var date_complete = document.getElementById('date-entry').value;
-*/
-
-
 function inputEvent() {
     var number = document.getElementById('number-entry').value;
     if (number !== '-') {
