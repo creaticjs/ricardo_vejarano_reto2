@@ -1,9 +1,3 @@
-/*
-document.getElementById('date').innerHTML = '<p>Date: ' + day + ' ' + monthNumber + ' ' + year +' </p>';
-Materialize.toast('Invalid data', 4000);
-var date_complete = document.getElementById('date-entry').value;
-*/
-
 function calculate() {
     var month = document.getElementById('month').value;
     var year = document.getElementById('year').value;
