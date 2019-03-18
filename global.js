@@ -21,5 +21,13 @@ function navegate(valueNavegate) {
             break;
         case 10: window.location.replace('http://127.0.0.1:5500/reto_2_10/problem10.html')
             break;
+        case 11: window.location.replace('http://127.0.0.1:5500/reto_2_11/problem11.html')
+            break;
     }
 }
+
+/*
+document.getElementById('date').innerHTML = '<p>Date: ' + day + ' ' + monthNumber + ' ' + year +' </p>';
+Materialize.toast('Invalid data', 4000);
+var date_complete = document.getElementById('date-entry').value;
+*/
