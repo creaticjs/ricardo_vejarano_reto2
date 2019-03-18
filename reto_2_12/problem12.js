@@ -1,9 +1,3 @@
-/*
-document.getElementById('date').innerHTML = '<p>Date: ' + day + ' ' + monthNumber + ' ' + year +' </p>';
-Materialize.toast('Invalid data', 4000);
-var date_complete = document.getElementById('date-entry').value;
-*/
-
 var input;
 var reader = new FileReader();
 

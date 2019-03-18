@@ -25,6 +25,8 @@ function navegate(valueNavegate) {
             break;
         case 12: window.location.replace('http://127.0.0.1:5500/reto_2_12/problem12.html')
             break;
+        case 13: window.location.replace('http://127.0.0.1:5500/reto_2_13/problem13.html')
+            break;
     }
 }
 
