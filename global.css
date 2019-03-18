@@ -12,5 +12,5 @@ form p {
 
 .tabs .tab {
     width: 10% !important;
-    min-width: 0px !important;
+    min-width: 20px !important;
 }
