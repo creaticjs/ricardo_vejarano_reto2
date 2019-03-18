@@ -31,6 +31,8 @@ function navegate(valueNavegate) {
             break;
         case 15: window.location.replace('http://127.0.0.1:5500/reto_2_15/problem15.html')
             break;
+        case 16: window.location.replace('http://127.0.0.1:5500/reto_2_16/problem16.html')
+            break;
         case 17: window.location.replace('http://127.0.0.1:5500/reto_2_17/problem17.html')
             break;
         case 18: window.location.replace('http://127.0.0.1:5500/reto_2_18/problem18.html')
@@ -38,8 +40,3 @@ function navegate(valueNavegate) {
     }
 }
 
-/*
-document.getElementById('date').innerHTML = '<p>Date: ' + day + ' ' + monthNumber + ' ' + year +' </p>';
-Materialize.toast('Invalid data', 4000);
-var date_complete = document.getElementById('date-entry').value;
-*/

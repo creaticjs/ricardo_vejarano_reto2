@@ -1,9 +1,3 @@
-/*
-document.getElementById('date').innerHTML = '<p>Date: ' + day + ' ' + monthNumber + ' ' + year +' </p>';
-Materialize.toast('Invalid data', 4000);
-var date_complete = document.getElementById('date-entry').value;
-*/
-
 var billsCop = [100000, 50000, 20000, 10000, 5000, 2000, 1000];
 var coinsCop = [500, 200, 100, 50];
 
@@ -21,7 +15,7 @@ function calculate() {
                 quantity = parseInt(quantity);
                 if (quantity > 0) {
                     amount = amount - quantity * billsCop[x];
-                    totalBills += quantity + ' de ' + billsCop[x] + ' | ';
+                    totalBills += quantity + ' of ' + billsCop[x] + ' | ';
                 }
             }
         }
@@ -34,7 +28,7 @@ function calculate() {
                 quantity = parseInt(quantity);
                 if (quantity > 0) {
                     amount = amount - quantity * coinsCop[x];
-                    totalCoins += quantity + ' de ' + coinsCop[x] + ' | ';
+                    totalCoins += quantity + ' of ' + coinsCop[x] + ' | ';
                 }
             }
         }
